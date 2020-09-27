@@ -4,4 +4,8 @@ public class CodingbatWarmup {
     return weekday == false | vacation == true;
   }
 
+  public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+    return aSmile == bSmile;
+  }
+
 }
