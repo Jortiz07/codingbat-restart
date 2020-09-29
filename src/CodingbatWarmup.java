@@ -25,4 +25,8 @@ public class CodingbatWarmup {
     return a == 10 || b == 10 || a + b == 10;
   }
 
+  public boolean nearHundred(int n) {
+    return Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;
+  }
+
 }
