@@ -85,4 +85,8 @@ public class CodingbatWarmup {
     return front + str + front;
   }
 
+  public boolean startHi(String str) {
+    return str.startsWith("hi");
+  }
+
 }
