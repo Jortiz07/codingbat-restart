@@ -35,4 +35,14 @@ public class CodingbatWarmup {
     } else return a < 0 && b > 0 || a > 0 && b < 0;
   }
 
+  public String notString(String str) {
+    String prefix = "not";
+    if (str.startsWith(prefix)) {
+      return str;
+    } else {
+      return prefix+" "+str;
+    }
+  }
+
+
 }
