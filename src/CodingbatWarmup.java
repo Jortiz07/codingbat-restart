@@ -97,4 +97,15 @@ public class CodingbatWarmup {
     return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
   }
 
+  public boolean hasTeen(int a, int b, int c) {
+    int found = 0;
+    int []teen = {a, b, c};
+    for (int i: teen) {
+      if ( i > 12 && i < 20) {
+        found++;
+      }
+    }
+    return found > 0;
+  }
+
 }
