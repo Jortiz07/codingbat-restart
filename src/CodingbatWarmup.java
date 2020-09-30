@@ -50,4 +50,13 @@ public class CodingbatWarmup {
     return front + rear;
   }
 
+  public String frontBack(String str) {
+    if (str.length() <= 1) {
+      return str;
+    }
+    String core = str.substring(1, str.length()-1);
+    return str.charAt(str.length()-1) + core + str.charAt(0);
+  }
+
+
 }
