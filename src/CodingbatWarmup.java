@@ -108,4 +108,18 @@ public class CodingbatWarmup {
     return found > 0;
   }
 
+  public boolean loneTeen(int a, int b) {
+    int found = 0;
+    int []teen = {a, b};
+    for (int i: teen) {
+      if ( i > 12 && i < 20) {
+        found++;
+      }
+    }
+    return found == 1;
+  }
+
+
+
+
 }
