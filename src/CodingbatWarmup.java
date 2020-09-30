@@ -93,4 +93,8 @@ public class CodingbatWarmup {
     return temp1 < 0 ? temp2 > 100 : temp1 > 100 && temp2 < 0;
   }
 
+  public boolean in1020(int a, int b) {
+    return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);
+  }
+
 }
