@@ -58,5 +58,13 @@ public class CodingbatWarmup {
     return str.charAt(str.length()-1) + core + str.charAt(0);
   }
 
+  public String front3(String str) {
+    if (str.length() < 3) {
+      return str+str+str;
+    }
+    String front = str.substring(0,3);
+    return front + front + front;
+  }
+
 
 }
