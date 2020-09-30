@@ -29,4 +29,10 @@ public class CodingbatWarmup {
     return Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;
   }
 
+  public boolean posNeg(int a, int b, boolean negative) {
+    if (negative) {
+      return  a + b < Math.abs(a + b);
+    } else return a < 0 && b > 0 || a > 0 && b < 0;
+  }
+
 }
