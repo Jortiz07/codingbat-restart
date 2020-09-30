@@ -66,5 +66,9 @@ public class CodingbatWarmup {
     return front + front + front;
   }
 
+  public String backAround(String str) {
+    char rear = str.charAt(str.length() - 1);
+    return rear + str + rear;
+  }
 
 }
