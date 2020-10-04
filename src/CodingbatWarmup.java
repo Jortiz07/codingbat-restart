@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class CodingbatWarmup {
 
   public boolean sleepIn(boolean weekday, boolean vacation) {
@@ -138,6 +140,12 @@ public class CodingbatWarmup {
       oz += "z";
     }
     return oz;
+  }
+
+  public int intMax(int a, int b, int c) {
+    int []max = {a, b, c};
+    Arrays.sort(max);
+    return max[max.length-1];
   }
 
 
