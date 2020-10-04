@@ -129,5 +129,16 @@ public class CodingbatWarmup {
     return str.length() > 2 && str.substring(1,3).equals("ix");
   }
 
+  public String startOz(String str) {
+    String oz = "";
+    if (str.length() >= 1 && str.charAt(0) == 'o') {
+      oz += "o";
+    }
+    if (str.length() >= 2 && str.charAt(1) == 'z') {
+      oz += "z";
+    }
+    return oz;
+  }
+
 
 }
