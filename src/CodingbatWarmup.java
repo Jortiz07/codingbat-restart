@@ -148,5 +148,12 @@ public class CodingbatWarmup {
     return max[max.length-1];
   }
 
+  public int close10(int a, int b) {
+    if (Math.abs((a - 10)) == Math.abs((b-10))) {
+      return 0;
+    } else
+      return Math.abs((a - 10)) < Math.abs((b-10)) ? a : b;
+  }
+
 
 }
