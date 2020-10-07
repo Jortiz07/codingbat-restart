@@ -171,6 +171,18 @@ public class CodingbatWarmup {
     return min == 2 | max == 2;
   }
 
+  public int max1020(int a, int b) {
+    int max = 0;
+    int [] data = {a, b};
+    Arrays.sort(data);
+    for (int i : data) {
+      if (i >= 10 && i <= 20) {
+        max = i;
+      }
+    }
+    return max;
+  }
+
 
 
 }
