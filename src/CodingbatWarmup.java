@@ -155,5 +155,22 @@ public class CodingbatWarmup {
       return Math.abs((a - 10)) < Math.abs((b-10)) ? a : b;
   }
 
+  public boolean in3050(int a, int b) {
+    int min = 0;
+    int max = 0;
+    int [] data = {a, b};
+    Arrays.sort(data);
+    for (int i : data) {
+      if (i >= 30 && i <= 40) {
+        min++;
+      }
+      if (i >= 40 && i <= 50) {
+        max++;
+      }
+    }
+    return min == 2 | max == 2;
+  }
+
+
 
 }
