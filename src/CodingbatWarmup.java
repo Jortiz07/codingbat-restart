@@ -196,6 +196,16 @@ public class CodingbatWarmup {
     return a % 10 == b % 10;
   }
 
+  public String endUp(String str) {
+    if (str.length() <= 3) {
+      return str.toUpperCase();
+    }
+    int middle = str.length() -3;
+    String front = str.substring(0, middle);
+    String rear = str.substring(middle, str.length());
+    return front + rear.toUpperCase();
+  }
+
 
 
 }
