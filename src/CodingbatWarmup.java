@@ -206,6 +206,17 @@ public class CodingbatWarmup {
     return front + rear.toUpperCase();
   }
 
+  public String everyNth(String str, int n) {
+    String newStr = str.substring(0, 1);
+    int addToN = n;
+    while (n < str.length()) {
+      newStr += str.substring(n, n+1);
+      n += addToN;
+    }
+    return newStr;
+  }
+
+
 
 
 }
